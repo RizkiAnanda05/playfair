@@ -13,7 +13,7 @@ function getKey(){
     }
 }
 function getString(){
-    var string = document.getElementById("plain").value.toLowerCase().replace(/\s/g,"");
+    var string = document.getElementById("plain").value.toUpperCase().replace(/\s/g,"");
     if (string === ""){
         alert("Harap masukan plaintext");
     }else{
@@ -22,8 +22,8 @@ function getString(){
     }
 }
 function matrikskey(){
-    var key = getKey().toLowerCase().replace(/\j/g,'i').replace(/\s/g,'');
-    const alfabet = "abcdefghiklmnopqrstuvwxyz";
+    var key = getKey().toUpperCase().replace(/\j/g,'I').replace(/\s/g,'');
+    const alfabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
     key += alfabet;
     for(let i = 0 ; i < key.length; i++){
         if (key.indexOf(key[i]) !== i){
@@ -35,15 +35,15 @@ function matrikskey(){
 }
 function plainedit(){
     var plaintext = getString();
-    plaintext = plaintext.replace(/j/g , "i");
+    plaintext = plaintext.replace(/j/g , "I");
     for (let i = 0 ; i < plaintext.length - 1 ; i += 2){
         if(plaintext[i] === plaintext[i + 1]){
-            plaintext = plaintext.slice(0, i + 1) + "x" + plaintext.slice(i + 1);
+            plaintext = plaintext.slice(0, i + 1) + "X" + plaintext.slice(i + 1);
 
         }
     }
     if (plaintext.length % 2 === 1){
-        plaintext += "x"
+        plaintext += "X"
     }
     return plaintext;
 }

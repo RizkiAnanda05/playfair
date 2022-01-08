@@ -1,0 +1,55 @@
+header{
+    text-align: center;
+    margin-top: 10px;
+}
+.play  {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 700px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.btn{
+    position: relative;
+    float: right;
+    height: 100;
+    width: 100;
+    margin:0 auto;
+}
+button {
+    background-color: #87CEEB;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+}
+.result{
+    margin-top: 50px;
+}
+.result textarea{
+    
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

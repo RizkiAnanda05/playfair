@@ -109,3 +109,8 @@ function decrypt(){
 
     resl.value = cipher;
 }
+function clr(){
+    document.getElementById("plain").value = "";
+    document.getElementById("key").value = "";
+    document.getElementById("result").value = "";
+}
